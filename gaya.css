@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: 10px;
+  background-color: #FFD914;
+
+  display: flex;
+  justify-content: center;
+  gap: 3rem 2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-list ul {
+  display: flex;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  padding: .5rem 1.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.nav-list li:hover a {
+  background-color: #FFD914;
+  color: black;
+}
+
+.nav-list .tbl-hitam {
+  border: 6px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.nav-list .tbl-hitam:hover {
+  background-color: black;
+  color: white;
+}
+
+.logotron {
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+}
+
+.main-bro {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main .main-aja button {
+  padding: 20px 50px;
+  text-transform: capitalize;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+
+  border: #FFD914;
+  background-color: #FFD914;
+  color: black;
+  border-radius: 999px;
+  transition: all .30s ease-in-out;
+}
+
+main .main-aja button:hover {
+  color: white;
+  background-color: black;
+}
+
+.card {
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.middle {
+  text-align: center;
+  margin: 0;
+}
+
+.designer-kita {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.the-card {
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.the-card img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.tbl-kuning {
+  border: 6px;
+  background-color: #FFD914;
+  color: black;
+  border-radius: 20px;
+
+  padding: 5px;
+}
+
+.tbl-kuning:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.list-project {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.the-project {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.the-project img {
+  width: 60%;
+  border-radius: 10%;
+}
+
+.profile-saya {
+  width: 20%;
+  display: flex;
+  order: 3;
+  flex: 1;
+  text-align: center;
+}
+
+.profile-saya article header img {
+  width: 80%;
+  border-radius: 10%;
+}
+
+.main-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.tentang-founder {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tentang-founder img {
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+.bagian-bawah {
+  display: flex;
+  background-color: #FFD914;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  .logotron img {
+    width: 100%;
+  }
+
+  nav {
+    width: 120%;
+  }
+
+  .nav-list ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: .5rem;
+  }
+
+  .the-card {
+    width: 50%;
+  }
+
+  .the-project {
+    width: 100%;
+  }
+
+  .bagian-bawah {
+    width: 120%;
+  }
+}
